@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ur" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SS GAMING STORE VIP | Premium Digital Top-Ups</title>
+    <title>SS GAMING STORE VIP | Premium Gaming Store</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -14,7 +14,7 @@
     <style>
         body {
             font-family: 'Rajdhani', sans-serif;
-            background-color: #080c14;
+            background-color: #0b0f19;
             color: #f1f5f9;
         }
         .font-orbitron { font-family: 'Orbitron', sans-serif; }
@@ -26,41 +26,43 @@
         .neon-card:hover {
             border-color: #00f0ff;
             box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
-            transform: translateY(-3px);
+            transform: translateY(-4px);
         }
         @keyframes marquee {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
         }
         .animate-marquee {
             display: inline-block;
             white-space: nowrap;
-            animation: marquee 25s linear infinite;
+            animation: marquee 22s linear infinite;
         }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased selection:bg-cyan-500 selection:text-black">
 
-    <!-- Top Neon Ticker (چلتی ہوئی پٹی) -->
+    <!-- Top Running Ticker -->
     <div class="bg-slate-950 border-b border-cyan-500/30 text-xs py-2 px-4 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <span class="bg-red-600 text-white font-bold px-2.5 py-0.5 rounded text-[10px] animate-pulse">
-                30% آف لائیو
+            <span class="bg-red-600 text-white font-bold px-2 py-0.5 rounded text-[10px] animate-pulse">
+                FLAT 30% OFF
             </span>
-            <div class="overflow-hidden w-2/3 mx-4 text-center">
+            <div class="overflow-hidden w-2/3 mx-4">
                 <div class="animate-marquee font-orbitron text-cyan-400 font-bold">
-                    🔥 خوش آمدید SS GAMING STORE VIP میں! پب جی گلوبل، کورین یو سی، ایکس باکس اور ٹک ٹاک کوائنز پر فلیٹ 30% ڈسکاؤنট! فوری واٹس ایپ آرڈر ڈسپیچ 🔥
+                    🔥 WELCOME TO SS GAMING STORE VIP! INSTANT WHATSAPP DISPATCH FOR PUBG UC, XBOX PASS, TIKTOK COINS & MORE 🔥
                 </div>
             </div>
-            <a href="https://wa.me/923424970004" target="_blank" class="bg-green-600 hover:bg-green-500 text-white px-3 py-1 rounded-full font-bold text-xs flex items-center gap-1.5">
+            <a href="https://wa.me/923424970004" target="_blank" class="bg-green-600 hover:bg-green-500 text-white px-3 py-1 rounded-full font-bold text-xs flex items-center gap-1">
                 <i class="fab fa-whatsapp"></i> 03424970004
             </a>
         </div>
     </div>
 
-    <!-- Main Header -->
-    <header class="border-b border-slate-800 bg-slate-900/90 backdrop-blur-md sticky top-8 z-40">
+    <!-- Main Navigation Header -->
+    <header class="border-b border-slate-800 bg-slate-900/95 backdrop-blur-md sticky top-8 z-40">
         <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            
+            <!-- Brand Logo -->
             <a href="#" class="flex items-center gap-3">
                 <div class="w-11 h-11 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center text-black text-xl font-bold shadow-lg shadow-cyan-500/30">
                     <i class="fas fa-gamepad"></i>
@@ -69,13 +71,43 @@
                     <h1 class="font-orbitron font-black text-xl text-white tracking-wider">
                         SS GAMING <span class="text-cyan-400">STORE</span> <span class="text-xs bg-red-600 px-1.5 py-0.5 rounded text-white font-sans">VIP</span>
                     </h1>
-                    <p class="text-[10px] text-slate-400 font-bold tracking-widest">آفیشل ڈیجیٹل ڈسپیچ ہب</p>
+                    <p class="text-[10px] text-slate-400 font-bold tracking-widest uppercase">Digital Top-Up & Mods</p>
                 </div>
             </a>
 
-            <a href="https://wa.me/923424970004?text=سلام!%20مجھے%20آرڈر%20کے%20بارے%20میں%20معلومات%20چاہیے۔" target="_blank" class="bg-green-600 hover:bg-green-500 text-white font-bold px-4 py-2 rounded-xl flex items-center gap-2 text-sm transition shadow-lg shadow-green-600/30">
-                <i class="fab fa-whatsapp text-lg"></i>
-                <span>واٹس ایپ ہیلپ لائن</span>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-6 text-sm font-bold font-orbitron">
+                <a href="#store" class="text-slate-300 hover:text-cyan-400 transition">Store</a>
+                <a href="#pubg" class="text-slate-300 hover:text-cyan-400 transition">PUBG UC</a>
+                <a href="#xbox" class="text-slate-300 hover:text-cyan-400 transition">Xbox Pass</a>
+                <a href="#free-games" class="text-slate-300 hover:text-cyan-400 transition">Free Games</a>
+            </nav>
+
+            <!-- WhatsApp Helpline & Mobile Menu Button (3 Lines) -->
+            <div class="flex items-center gap-3">
+                <a href="https://wa.me/923424970004?text=Hello%20SS%20Gaming%20Store%20VIP!%20I%20have%20an%20inquiry." target="_blank" class="hidden sm:flex bg-green-600 hover:bg-green-500 text-white font-bold px-4 py-2 rounded-xl items-center gap-2 text-sm transition shadow-lg shadow-green-600/30">
+                    <i class="fab fa-whatsapp text-lg"></i>
+                    <span>WhatsApp Help</span>
+                </a>
+
+                <!-- 3-Line Menu Toggle Button -->
+                <button onclick="toggleMobileMenu()" class="md:hidden text-cyan-400 text-2xl p-2 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Slide-Down Menu (3 Lines Drawer) -->
+        <div id="mobileMenu" class="hidden md:hidden border-t border-slate-800 bg-slate-950 p-4 space-y-3 font-orbitron text-sm">
+            <a href="#store" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-cyan-400">All Categories</a>
+            <a href="#pubg" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-cyan-400">PUBG Mobile (Global & KR)</a>
+            <a href="#xbox" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-cyan-400">Xbox Game Pass</a>
+            <a href="#tiktok" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-cyan-400">TikTok Coins</a>
+            <a href="#cricket" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-cyan-400">Real Cricket & RC Swipe</a>
+            <a href="#ludo" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-cyan-400">Yalla Ludo</a>
+            <a href="#free-games" onclick="toggleMobileMenu()" class="block text-slate-300 hover:text-cyan-400">Free Games</a>
+            <a href="https://wa.me/923424970004" target="_blank" class="block bg-green-600 text-white font-bold text-center py-2 rounded-lg">
+                <i class="fab fa-whatsapp"></i> Contact 03424970004
             </a>
         </div>
     </header>
@@ -83,142 +115,184 @@
     <!-- Hero Showcase Section -->
     <section class="py-10 px-4 max-w-7xl mx-auto text-center">
         <span class="text-cyan-400 font-orbitron text-xs font-bold tracking-widest uppercase bg-cyan-950/50 px-3 py-1 rounded-full border border-cyan-500/30">
-            پریمیਅਮ گیمنگ سروسز
+            Pakistan's #1 Gaming Store
         </span>
         <h2 class="text-3xl md:text-5xl font-black text-white font-orbitron mt-3">
-            ایس ایس گیمنگ اسٹور <span class="text-cyan-400">وی آئی پی</span>
+            SS GAMING <span class="text-cyan-400">STORE VIP</span>
         </h2>
         <p class="text-slate-400 text-sm max-w-xl mx-auto mt-2">
-            پب جی موبائل گلوبل اور کورین یو سی، ایکس باکس گیم پاس، ٹک ٹاک کوائنز اور ریل کرکٹ کے تمام پیکجز انتہائی کم داموں میں دستیاب ہیں۔ نیچے پروڈکٹ پر کلک کر کے براہ راست واٹس ایپ پر رابطہ کریں!
+            Instant top-ups, game subscriptions, mod passes, and free downloads with 100% manual order safety and WhatsApp tracking receipt!
         </p>
     </section>
 
-    <!-- Products Grid Section -->
-    <section class="pb-16 px-4 max-w-7xl mx-auto">
+    <!-- Product Grid Catalogue Section -->
+    <section id="store" class="pb-16 px-4 max-w-7xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-            <!-- 1. PUBG Global UC -->
-            <div class="neon-card rounded-2xl p-5 flex flex-col justify-between">
+            <!-- 1. Xbox Game Pass Subscription -->
+            <div id="xbox" class="neon-card rounded-2xl p-5 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-3">
-                        <span class="bg-cyan-500/10 text-cyan-400 text-xs font-bold px-2.5 py-1 rounded border border-cyan-500/30">پب جی گلوبل</span>
-                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% آف</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">PUBG Global UC Pack (660 UC)</h3>
-                    <p class="text-slate-400 text-xs mb-4">آئی ڈی کے ذریعے بالکل محفوظ اور فوری ٹاپ اپ صرف 5 منٹ میں۔</p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                    <div>
-                        <span class="text-xs text-slate-500 line-through">Rs. 1,850</span>
-                        <div class="text-lg font-bold text-cyan-400">Rs. 1,299 PKR</div>
-                    </div>
-                    <a href="https://wa.me/923424970004?text=سلام!%20مجھے%20PUBG%20Global%20UC%20(Rs.%201299)%20خریدنی%20ہے۔" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
-                        <i class="fab fa-whatsapp text-sm"></i> واٹس ایپ آرڈر
-                    </a>
-                </div>
-            </div>
-
-            <!-- 2. PUBG Korean UC -->
-            <div class="neon-card rounded-2xl p-5 flex flex-col justify-between">
-                <div>
-                    <div class="flex justify-between items-start mb-3">
-                        <span class="bg-blue-500/10 text-blue-400 text-xs font-bold px-2.5 py-1 rounded border border-blue-500/30">پب جی کورین</span>
-                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% آف</span>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-2">PUBG Korean (KR) UC Pack</h3>
-                    <p class="text-slate-400 text-xs mb-4">کورین ورژن کے کھلاڑیوں کے لیے اسپیشل انسٹنٹ یو سی ٹرانسفر۔</p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-slate-800">
-                    <div>
-                        <span class="text-xs text-slate-500 line-through">Rs. 2,000</span>
-                        <div class="text-lg font-bold text-cyan-400">Rs. 1,399 PKR</div>
-                    </div>
-                    <a href="https://wa.me/923424970004?text=سلام!%20मुझे%20PUBG%20Korean%20UC%20(Rs.%201399)%20خریدنی%20ہے۔" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
-                        <i class="fab fa-whatsapp text-sm"></i> واٹس ایپ آرڈر
-                    </a>
-                </div>
-            </div>
-
-            <!-- 3. Xbox Game Pass -->
-            <div class="neon-card rounded-2xl p-5 flex flex-col justify-between">
-                <div>
-                    <div class="flex justify-between items-start mb-3">
-                        <span class="bg-green-500/10 text-green-400 text-xs font-bold px-2.5 py-1 rounded border border-green-500/30">سبسکرپشن</span>
-                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% آف</span>
+                        <span class="bg-green-500/10 text-green-400 text-xs font-bold px-2.5 py-1 rounded border border-green-500/30">SUBSCRIPTION</span>
+                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% OFF</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">Xbox Game Pass Ultimate</h3>
-                    <p class="text-slate-400 text-xs mb-4">پی سی اور کنسول گیمز کے لیے 1 ماہ کا الٹیمیٹ پاس ایکٹیویشن کیے۔</p>
+                    <p class="text-slate-400 text-xs mb-4">Play 100+ High Quality Console & PC games with multiplayer unlocked.</p>
                 </div>
                 <div class="flex items-center justify-between pt-4 border-t border-slate-800">
                     <div>
                         <span class="text-xs text-slate-500 line-through">Rs. 2,500</span>
                         <div class="text-lg font-bold text-cyan-400">Rs. 1,750 PKR</div>
                     </div>
-                    <a href="https://wa.me/923424970004?text=سلام!%20मुझे%20Xbox%20Game%20Pass%20(Rs.%201750)%20خریدنا%20ہے۔" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
-                        <i class="fab fa-whatsapp text-sm"></i> واٹس ایپ آرڈر
+                    <a href="https://wa.me/923424970004?text=Hello!%20I%20want%20to%20buy%20Xbox%20Game%20Pass%20Ultimate%20(Rs.%201750)" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
+                        <i class="fab fa-whatsapp text-sm"></i> Buy Now
                     </a>
                 </div>
             </div>
 
-            <!-- 4. TikTok Coins -->
-            <div class="neon-card rounded-2xl p-5 flex flex-col justify-between">
+            <!-- 2. PUBG Global UC -->
+            <div id="pubg" class="neon-card rounded-2xl p-5 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-3">
-                        <span class="bg-fuchsia-500/10 text-fuchsia-400 text-xs font-bold px-2.5 py-1 rounded border border-fuchsia-500/30">ٹک ٹاک کوائنز</span>
-                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% آف</span>
+                        <span class="bg-cyan-500/10 text-cyan-400 text-xs font-bold px-2.5 py-1 rounded border border-cyan-500/30">PUBG GLOBAL</span>
+                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% OFF</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">TikTok Live Gifting Coins</h3>
-                    <p class="text-slate-400 text-xs mb-4">لائیو اسٹریمنگ کے لیے گفٹنگ کوائنز کا سستا ترین ریچارج پیکج۔</p>
+                    <h3 class="text-xl font-bold text-white mb-2">PUBG Global UC (660 + 60 Bonus)</h3>
+                    <p class="text-slate-400 text-xs mb-4">Direct Character ID top-up. Safe & 100% official Global UC pack.</p>
                 </div>
                 <div class="flex items-center justify-between pt-4 border-t border-slate-800">
                     <div>
-                        <span class="text-xs text-slate-500 line-through">Rs. 1,500</span>
-                        <div class="text-lg font-bold text-cyan-400">Rs. 1,050 PKR</div>
+                        <span class="text-xs text-slate-500 line-through">Rs. 1,850</span>
+                        <div class="text-lg font-bold text-cyan-400">Rs. 1,299 PKR</div>
                     </div>
-                    <a href="https://wa.me/923424970004?text=سلام!%20मुझे%20TikTok%20Coins%20(Rs.%201050)%20خریدنے%20ہیں۔" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
-                        <i class="fab fa-whatsapp text-sm"></i> واٹس ایپ آرڈر
+                    <a href="https://wa.me/923424970004?text=Hello!%20I%20want%20to%20buy%20PUBG%20Global%20UC%20(Rs.%201299)" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
+                        <i class="fab fa-whatsapp text-sm"></i> Buy Now
                     </a>
                 </div>
             </div>
 
-            <!-- 5. Real Cricket / Krafton -->
+            <!-- 3. PUBG Korean UC -->
             <div class="neon-card rounded-2xl p-5 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-3">
-                        <span class="bg-amber-500/10 text-amber-400 text-xs font-bold px-2.5 py-1 rounded border border-amber-500/30">رئیل کرکٹ</span>
-                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% آف</span>
+                        <span class="bg-blue-500/10 text-blue-400 text-xs font-bold px-2.5 py-1 rounded border border-blue-500/30">PUBG KOREAN</span>
+                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% OFF</span>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Real Cricket / Krafton Pass</h3>
-                    <p class="text-slate-400 text-xs mb-4">سبسکرپشنز، لیول 100 آئی ڈیز اور موڈ کریڈٹ انلاکس۔</p>
+                    <h3 class="text-xl font-bold text-white mb-2">PUBG Korean (KR) UC Pack</h3>
+                    <p class="text-slate-400 text-xs mb-4">Instant UC transfer for Korean version players with full safety.</p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                    <div>
+                        <span class="text-xs text-slate-500 line-through">Rs. 2,000</span>
+                        <div class="text-lg font-bold text-cyan-400">Rs. 1,399 PKR</div>
+                    </div>
+                    <a href="https://wa.me/923424970004?text=Hello!%20I%20want%20to%20buy%20PUBG%20Korean%20UC%20(Rs.%201399)" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
+                        <i class="fab fa-whatsapp text-sm"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- 4. Real Cricket / Krafton -->
+            <div id="cricket" class="neon-card rounded-2xl p-5 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-amber-500/10 text-amber-400 text-xs font-bold px-2.5 py-1 rounded border border-amber-500/30">CRICKET PASS</span>
+                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% OFF</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Real Cricket / Krafton Subscription</h3>
+                    <p class="text-slate-400 text-xs mb-4">Real Cricket subscriptions, Level 100 IDs, and Mod Creator unlocks.</p>
                 </div>
                 <div class="flex items-center justify-between pt-4 border-t border-slate-800">
                     <div>
                         <span class="text-xs text-slate-500 line-through">Rs. 1,600</span>
                         <div class="text-lg font-bold text-cyan-400">Rs. 1,120 PKR</div>
                     </div>
-                    <a href="https://wa.me/923424970004?text=سلام!%20मुझे%20Real%20Cricket%20Pass%20(Rs.%201120)%20چاہیے۔" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
-                        <i class="fab fa-whatsapp text-sm"></i> واٹس ایپ آرڈر
+                    <a href="https://wa.me/923424970004?text=Hello!%20I%20want%20to%20buy%20Real%20Cricket%20Krafton%20Pass" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
+                        <i class="fab fa-whatsapp text-sm"></i> Buy Now
                     </a>
                 </div>
             </div>
 
-            <!-- 6. Yalla Ludo Diamonds -->
+            <!-- 5. RC Swipe Level 100 -->
             <div class="neon-card rounded-2xl p-5 flex flex-col justify-between">
                 <div>
                     <div class="flex justify-between items-start mb-3">
-                        <span class="bg-yellow-500/10 text-yellow-400 text-xs font-bold px-2.5 py-1 rounded border border-yellow-500/30">یلا لڈو</span>
-                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% آف</span>
+                        <span class="bg-purple-500/10 text-purple-400 text-xs font-bold px-2.5 py-1 rounded border border-purple-500/30">RC SWIPE</span>
+                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% OFF</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">RC Swipe Level 100 ID</h3>
+                    <p class="text-slate-400 text-xs mb-4">Fully unlocked RC Swipe level 100 accounts with bonus shots.</p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                    <div>
+                        <span class="text-xs text-slate-500 line-through">Rs. 1,700</span>
+                        <div class="text-lg font-bold text-cyan-400">Rs. 1,190 PKR</div>
+                    </div>
+                    <a href="https://wa.me/923424970004?text=Hello!%20I%20want%20to%20buy%20RC%20Swipe%20Level%20100%20ID" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
+                        <i class="fab fa-whatsapp text-sm"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- 6. TikTok Coins Recharge -->
+            <div id="tiktok" class="neon-card rounded-2xl p-5 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-fuchsia-500/10 text-fuchsia-400 text-xs font-bold px-2.5 py-1 rounded border border-fuchsia-500/30">TIKTOK COINS</span>
+                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% OFF</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">TikTok Coins Recharge</h3>
+                    <p class="text-slate-400 text-xs mb-4">Instant live stream gifting coin recharge at cheapest bulk rates.</p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                    <div>
+                        <span class="text-xs text-slate-500 line-through">Rs. 1,500</span>
+                        <div class="text-lg font-bold text-cyan-400">Rs. 1,050 PKR</div>
+                    </div>
+                    <a href="https://wa.me/923424970004?text=Hello!%20I%20want%20to%20buy%20TikTok%20Coins%20Recharge" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
+                        <i class="fab fa-whatsapp text-sm"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- 7. Yalla Ludo Diamonds & Coins -->
+            <div id="ludo" class="neon-card rounded-2xl p-5 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-yellow-500/10 text-yellow-400 text-xs font-bold px-2.5 py-1 rounded border border-yellow-500/30">YALLA LUDO</span>
+                        <span class="bg-red-600 text-white font-bold text-xs px-2 py-0.5 rounded">30% OFF</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-2">Yalla Ludo Diamonds & Coins</h3>
-                    <p class="text-slate-400 text-xs mb-4">یلا لڈو ڈائمنڈز اور گولڈ কয়نز کا ڈائریکٹ آئی ڈی ٹاپ اپ پیکج۔</p>
+                    <p class="text-slate-400 text-xs mb-4">Direct User ID top-up for Yalla Ludo gold coins & diamonds.</p>
                 </div>
                 <div class="flex items-center justify-between pt-4 border-t border-slate-800">
                     <div>
                         <span class="text-xs text-slate-500 line-through">Rs. 1,200</span>
                         <div class="text-lg font-bold text-cyan-400">Rs. 840 PKR</div>
                     </div>
-                    <a href="https://wa.me/923424970004?text=سلام!%20मुझे%20Yalla%20Ludo%20Diamonds%20(Rs.%20840)%20چاہیے۔" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
-                        <i class="fab fa-whatsapp text-sm"></i> واٹس ایپ آرڈر
+                    <a href="https://wa.me/923424970004?text=Hello!%20I%20want%20to%20buy%20Yalla%20Ludo%20Diamonds" target="_blank" class="bg-green-600 hover:bg-green-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
+                        <i class="fab fa-whatsapp text-sm"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- 8. Free Games Section -->
+            <div id="free-games" class="neon-card rounded-2xl p-5 flex flex-col justify-between">
+                <div>
+                    <div class="flex justify-between items-start mb-3">
+                        <span class="bg-emerald-500/10 text-emerald-400 text-xs font-bold px-2.5 py-1 rounded border border-emerald-500/30">FREE DOWNLOADS</span>
+                        <span class="bg-emerald-600 text-white font-bold text-xs px-2 py-0.5 rounded">FREE</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Free Game Mods & Downloads</h3>
+                    <p class="text-slate-400 text-xs mb-4">Testing patches, beta tools, and unlocked game files.</p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-slate-800">
+                    <div>
+                        <span class="text-xs text-emerald-400 font-bold">100% Free</span>
+                        <div class="text-lg font-bold text-white">Rs. 0 PKR</div>
+                    </div>
+                    <a href="https://wa.me/923424970004?text=Hello!%20Send%20me%20Free%20Game%20Download%20Link" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-lg flex items-center gap-1.5 transition">
+                        <i class="fas fa-download"></i> Download
                     </a>
                 </div>
             </div>
@@ -226,11 +300,18 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section -->
     <footer class="bg-slate-950 border-t border-slate-800 py-8 px-4 text-center text-xs text-slate-500">
-        <p class="font-orbitron text-slate-300 font-bold mb-1">SS GAMING STORE VIP</p>
-        <p>© 2026 جملہ حقوق محفوظ ہیں۔ تمام آرڈرز واٹس ایپ کے ذریعے کنفرم کیے جاتے ہیں۔</p>
+        <p class="font-orbitron text-slate-300 font-bold text-sm mb-1">SS GAMING STORE VIP</p>
+        <p>© 2026 Official Gaming Digital Store. All Rights Reserved. WhatsApp Support: 03424970004</p>
     </footer>
 
+    <!-- JS script for 3-Line Mobile Navigation Toggle -->
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 </body>
 </html>
